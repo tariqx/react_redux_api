@@ -1,6 +1,7 @@
 import { Action } from 'redux';
 
-//create interface
+/* create an interface for the store object, this will be based object that all actions 
+shared throughout the life of application */
 export interface IInitialState {
     data: any,
     hasError: boolean,

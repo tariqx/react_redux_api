@@ -30,11 +30,11 @@ function App() {
   const dispatch = useDispatch()
 
   function getData() {
-    //using redux-thunk pattern to dispatch typescript action that will make the api call
+    //using redux-thunk pattern to dispatch action that will make the api call
     return (dispatch: Dispatch<any>) => {
       axios.get("https://localhost:5001/api/products")
         .then(res => {
-          //call allProducts action and send new data into the store 
+          //call allProducts action and save new data into the store 
           dispatch(allProducts(res.data))
         }).catch(err => {
           //call productsError action when there is an error 
@@ -98,6 +98,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       {renderData()}
+      {/* display any error encountered during API call */}
       <DisplayErrors />
       </header>
     </div>
