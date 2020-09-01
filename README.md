@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Related Blog Post
+This project is related to the blog post [React Hooks + Redux + API](https://ajaxzen.wordpress.com/2020/09/01/react-hooks-redux-api/)
 
 ## Available Scripts
 
